@@ -1,25 +1,35 @@
 ﻿# 05 · Diagramas
 
 ## Diagrama de casos de uso (alto nivel)
-%%{init: {'theme': 'default'}}%%
-```mermaid
-%% Diagrama de casos de uso principal
-usecaseDiagram
-  actor Administrador
-  actor Visitante
+flowchart TD
+  %% Actores
+  Admin[Administrador]
+  Visitor[Visitante]
 
-  Administrador --> (Autenticar)
-  Administrador --> (Gestionar publicaciones)
-  Administrador --> (Configurar apariencia)
-  Administrador --> (Monitorear métricas)
+  %% Casos de uso
+  Autenticar[(Autenticar)]
+  Gestionar[(Gestionar publicaciones)]
+  Configurar[(Configurar apariencia)]
+  Monitorear[(Monitorear métricas)]
+  Consultar[(Consultar contenido)]
+  Registrar[(Registrar vista)]
+  DarLike[(Dar like)]
 
-  Visitante --> (Consultar contenido)
-  Visitante --> (Registrar vista)
-  Visitante --> (Dar like)
+  %% Relaciones Administrador
+  Admin --> Autenticar
+  Admin --> Gestionar
+  Admin --> Configurar
+  Admin --> Monitorear
 
-  (Gestionar publicaciones) ..> (Autenticar) : «include»
-  (Configurar apariencia) ..> (Autenticar) : «include»
-```
+  %% Relaciones Visitante
+  Visitor --> Consultar
+  Visitor --> Registrar
+  Visitor --> DarLike
+
+  %% Include
+  Gestionar -.-> Autenticar
+  Configurar -.-> Autenticar
+
 
 ## Diagrama de clases (modelo de dominio simplificado)
 ```mermaid
