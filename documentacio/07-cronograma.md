@@ -23,7 +23,7 @@
 - **Base de datos:** Modelado, migraciones, monitoreo de volúmenes.
 - **QA/DevOps:** Automatización de pruebas, pipelines, despliegue Docker.
 
-## Gestión de riesgos en el tiempo
-- Revisión semanal del backlog con priorización MoSCoW.
-- Buffer de 2 días en semana 6 para contingencias técnicas o re-trabajo.
-- Uso de issues etiquetados para bloqueadores críticos.
+## Gestión de riesgos (versión simple)
+- **Cada semana miramos la lista de cosas pendientes y vemos qué es lo más importante, lo que podemos hacer si sobra tiempo y lo que dejamos para después.
+- **Reservamos 2 días en la semana 6 por si algo no sale bien o hay que rehacer algo.
+- **Si algo rompe todo o bloquea el avance, lo marcamos para arreglarlo rápido.
