@@ -1,16 +1,21 @@
 ﻿# 01 · Propuesta inicial
 
 ## Nombre del proyecto
-**IAE Blog** – Plataforma de comunicación institucional para el Instituto de Artes Escénicas.
+**IAE Blog** – Plataforma de comunicación institucional para el Instituto de alta especializacion.
 
-## Equipo
-- Rol de coordinación técnica
-- Rol de desarrollo frontend
-- Rol de desarrollo backend
-- Rol de aseguramiento de calidad y base de datos
-- Rol de UX/escritura de contenidos
+##Equipo
 
-*(Los nombres se completarán con los integrantes reales del equipo.)*
+Facundo Pereira – Coordinación Técnica y Desarrollo Backend
+Participó activamente en la programación del backend y colaboró en la coordinación general del proyecto.
+
+Martín Araujo – Desarrollo Frontend
+Encargado del desarrollo del frontend y la implementación de funcionalidades de la interfaz.
+
+Marcelo Fernández – Documentación y UX / Escritura de Contenidos
+Responsable de la documentación del proyecto, revisión de procesos y diseño de la experiencia de usuario.
+
+Aseguramiento de Calidad y Base de Datos – Facundo Pereira y Martín Araujo
+Control de la calidad del software, pruebas y mantenimiento de la base de datos del proyecto.
 
 ## Visión
 Crear una experiencia digital centralizada donde el IAE publique noticias, agenda cultural y material audiovisual en tiempo real, con control editorial y analítica básica de engagement.
