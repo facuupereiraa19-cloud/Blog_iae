@@ -1,6 +1,7 @@
 ﻿# 05 · Diagramas
 
 ## Diagrama de casos de uso (alto nivel)
+%%{init: {'theme': 'default'}}%%
 ```mermaid
 %% Diagrama de casos de uso principal
 usecaseDiagram
