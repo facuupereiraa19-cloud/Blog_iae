@@ -14,7 +14,7 @@
 ## Hitos y check-points
 - **H1 (fin semana 2):** MVP backend autenticación funcionando con pruebas automáticas verdes.
 - **H2 (fin semana 4):** Flujo completo de publicaciones (crear → ver → like) operativo.
-- **H3 (fin semana 6):** Demo final ejecutándose en entorno dockerizado y documentación entregada.
+- **H3 (fin semana 6):** Demo final ejecutándose en entorno dockerizado y documentación completa.
 
 ## Roles y responsabilidades
 - **Coordinador/a:** Seguimiento de cronograma, reuniones con stakeholders.
