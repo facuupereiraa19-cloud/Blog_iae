@@ -17,7 +17,7 @@
 - **H3 (fin semana 6):** Demo final ejecutándose en entorno dockerizado y documentación completa.
 
 ## Roles y responsabilidades
-- **Coordinador/a:** Seguimiento de cronograma, reuniones con stakeholders.
+- **Coordinador/a:** Seguimiento de cronograma, reuniones con clientes.
 - **Frontend:** Desarrollo de vistas Quasar, UX y pruebas manuales.
 - **Backend:** API Express, seguridad, integración con Mongo.
 - **Base de datos:** Modelado, migraciones, monitoreo de volúmenes.
