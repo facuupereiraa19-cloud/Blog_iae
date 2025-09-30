@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=IAE Blog - Installer & Runner
+Comment=Instala y ejecuta IAE Blog con Docker
+Exec=bash -lc '"$(dirname %k)/run.sh"'
+Terminal=true
+Categories=Utility;Development;
+Icon=utilities-terminal
+StartupNotify=true
+

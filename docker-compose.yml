@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:4.4
+    container_name: iae_mongo
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - iae_net
+
+  backend:
+    build:
+      context: ./backend
+    container_name: iae_backend
+    depends_on:
+      - mongo
+    environment:
+      - NODE_ENV=production
+      - DEMO_MODE=false
+      - JWT_SECRET=${JWT_SECRET:-supersecreto_cambia_esto}
+      - DB_URL=mongodb://mongo:27017/iae_blog
+      - UPLOAD_MAX_MB=100
+    ports:
+      - "5000:5000"
+    volumes:
+      - uploads_data:/app/uploads
+    networks:
+      - iae_net
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: iae_frontend
+    depends_on:
+      - backend
+    ports:
+      - "9000:80"
+    networks:
+      - iae_net
+
+networks:
+  iae_net:
+    driver: bridge
+
+volumes:
+  mongo_data:
+    driver: local
+  uploads_data:
+    driver: local
