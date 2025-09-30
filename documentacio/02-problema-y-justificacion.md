@@ -1,7 +1,7 @@
 ﻿# 02 · Presentación del problema y justificación técnica
 
 ## Contexto
-El Instituto de Artes Escénicas (IAE) mantiene múltiples actividades culturales y académicas, pero la difusión depende de boletines impresos y publicaciones dispersas en redes sociales manejadas por voluntarios. Los alumnos y público externo reportan dificultades para mantenerse informados y consumir contenidos posteriores a los eventos.
+El Instituto de alta especializacion  (IAE) mantiene múltiples actividades culturales y académicas, pero la difusión depende de boletines impresos y publicaciones dispersas en redes sociales manejadas por voluntarios. Los alumnos y público externo reportan dificultades para mantenerse informados y consumir contenidos posteriores a los eventos.
 
 ## Problema / Necesidad
 - No existe un repositorio oficial y actualizado de noticias, funciones y material multimedia del IAE.
