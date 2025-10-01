@@ -16,9 +16,8 @@ usecaseDiagram
   Visitante --> (Registrar vista)
   Visitante --> (Dar like)
 
-  (Gestionar publicaciones) ..> (Autenticar) : «include»
-  (Configurar apariencia) ..> (Autenticar) : «include»
-```
+  (Gestionar publicaciones) ..> (Autenticar) : <<include>>
+  (Configurar apariencia) ..> (Autenticar) : <<include>>
 
 
 
