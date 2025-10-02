@@ -44,11 +44,10 @@ Crear una experiencia digital centralizada donde el IAE publique noticias, agend
 1. Documentación de ingeniería de software (requerimientos, casos de uso, cronograma).
 2. SPA con Quasar (Vue 3) consumiendo API Express.
 3. Servicio Node.js con autenticación Passport.js + JWT conectado a MongoDB.
-4. Modelo de datos documentado y scripts de seed de ejemplo.
-5. Suite de pruebas (API con Supertest + pruebas manuales guiadas en frontend).
-6. Paquete Docker Compose listo para despliegue.
-7. Manuales de instalación y usuario final.
-8. Presentación ejecutiva para defensa oral.
+4. Suite de pruebas (API con Supertest + pruebas manuales guiadas en frontend).
+5. Paquete Docker Compose listo para despliegue.
+6. Manuales de instalación y usuario final.
+7. Presentación ejecutiva para defensa oral.
 
 ## Criterios de éxito
 - Los usuarios administradores pueden autenticar, crear y publicar contenidos multimedia sin errores críticos.
