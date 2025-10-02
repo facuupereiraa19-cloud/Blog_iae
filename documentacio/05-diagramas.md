@@ -2,22 +2,72 @@
 
 ## Diagrama de casos de uso (alto nivel)
 ```mermaid
-flowchart TD
-  Admin([Administrador])
-  Visit([Visitante])
+%% Diagrama de casos de uso principal
+usecaseDiagram
+  actor Administrador
+  actor Visitante
 
-  Admin --> A[Autenticar]
-  Admin --> B[Gestionar publicaciones]
-  Admin --> C[Configurar apariencia]
-  Admin --> D[Monitorear métricas]
+  Administrador --> (Autenticar)
+  Administrador --> (Gestionar publicaciones)
+  Administrador --> (Configurar apariencia)
+  Administrador --> (Monitorear métricas)
 
-  Visit --> E[Consultar contenido]
-  Visit --> F[Registrar vista]
-  Visit --> G[Dar like]
+  Visitante --> (Consultar contenido)
+  Visitante --> (Registrar vista)
+  Visitante --> (Dar like)
 
-  B -.-> A
-  C -.-> A
+  (Gestionar publicaciones) ..> (Autenticar) : «include»
+  (Configurar apariencia) ..> (Autenticar) : «include»
+```
 
+## Diagrama de clases (modelo de dominio simplificado)
+```mermaid
+classDiagram
+  class User {
+    ObjectId _id
+    String email
+    String passwordHash
+    String role
+    Date createdAt
+    Date updatedAt
+  }
+
+  class Post {
+    ObjectId _id
+    String title
+    String content
+    String image
+    String video
+    String filePath
+    Number views
+    Number likes
+    String size
+    Date createdAt
+    Date updatedAt
+  }
+
+  class Settings {
+    ObjectId _id
+    Number featuredLayout
+    Colors colors
+    Date createdAt
+    Date updatedAt
+  }
+
+  class Colors {
+    String primary
+    String secondary
+    String accent
+    String positive
+    String negative
+    String info
+    String warning
+  }
+
+  User "1" -- "*" Post : crea
+  Post "*" --> "1" User : pertenece
+  Settings "1" --> Colors : posee
+```
 
 ## Arquitectura lógica (vista de componentes)
 ```mermaid
