@@ -5,7 +5,7 @@
 - **Visitante**: consume contenido público e interactúa con likes.
 
 ## Acceso de administradores
-1. Entrar a http://localhost:8080/#/login.
+1. Entrar a http://localhost:9000/#/login.
 2. Introducir correo y contraseña.
 3. Presionar "Iniciar sesión". Si las credenciales son correctas, se redirige al Dashboard.
 4. Recuperación de acceso: coordinar con otro admin para crear un nuevo usuario (no hay recuperación por correo en MVP).
